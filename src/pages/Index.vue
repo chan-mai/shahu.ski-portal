@@ -83,7 +83,7 @@
 
     <!-- Post List -->
     <section id="posts">
-        <div class="flex flex-col items-center justify-center pt-24 mx-auto rounded-lg lg:px-10 max-w-7xl">
+        <div class="flex flex-col items-center justify-center pt-24 mx-auto rounded-lg px-4 sm:px-6 lg:px-8 max-w-7xl">
             <PostList />
         </div>
     </section>
