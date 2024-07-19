@@ -12,7 +12,11 @@
     // limit, offsetの設定
     let page = ref(1);
     let maxPage = ref(1);
-    let limit: number = 50;
+    if (navigator.userAgent.match(/Android.+Mobile|iPhone|iPod/i)) {
+        let limit: number = 10;
+    } else {
+        let limit: number = 50;
+    }
     let offset: number = (page.value - 1) * limit;
 
     // queries錬成
