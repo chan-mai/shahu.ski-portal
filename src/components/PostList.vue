@@ -105,7 +105,7 @@
     </div>
     <!-- Post List -->
     <div v-if="isLoaded">
-        <div class="grid grid-cols-3 gap-3 mb-10">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 mb-10">
             <div v-for="content in contents" :key="content.id">
                 <router-link :to="'/content/doc/'+content.id">
                     <div class="flex flex-col bg-white border shadow-sm rounded-xl dark:bg-slate-900 dark:border-gray-700 dark:shadow-slate-700/[.7]">
