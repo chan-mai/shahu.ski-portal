@@ -12,6 +12,7 @@
     "axios": "^1.6.7",
     "microcms-js-sdk": "^2.7.0",
     "moment": "^2.30.1",
+    "preline": "^2.3.0",
     "vue": "^3.4.15",
     "vue-router": "^4.2.5"
   },
