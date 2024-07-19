@@ -9,14 +9,17 @@
         search_text: String,
     });
 
-    // limit, offsetの設定
+    // limitの設定
+    let limit: number;
+    if (navigator.userAgent.match(/Android.+Mobile|iPhone|iPod/i)) {
+        limit = 10;
+    } else {
+        limit = 50;
+    }
+
+    // offsetの設定
     let page = ref(1);
     let maxPage = ref(1);
-    if (navigator.userAgent.match(/Android.+Mobile|iPhone|iPod/i)) {
-        let limit: number = 10;
-    } else {
-        let limit: number = 50;
-    }
     let offset: number = (page.value - 1) * limit;
 
     // queries錬成
