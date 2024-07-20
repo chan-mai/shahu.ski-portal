@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
+import IStaticMethods from "preline/preline";
 import Index from "../pages/Index.vue";
 import MoreInfo from "../pages/MoreInfo.vue";
 import Donate from "../pages/Donate.vue";
@@ -11,6 +12,12 @@ import Category from "../pages/Category.vue";
 import NotFound from "../pages/NotFound.vue";
 
 const DEFAULT_TITLE = 'しゃふすきーポータル'
+
+declare global {
+  interface Window {
+    HSStaticMethods: IStaticMethods;
+  }
+}
 
 export const routes: any = [
   {
@@ -106,6 +113,9 @@ const router = createRouter({
 
 router.afterEach((to: any) => {
   document.title = (to.meta.title as string) || DEFAULT_TITLE
+  setTimeout(() => {
+    window.HSStaticMethods.autoInit();
+  }, 100)
 })
 
 export default router;

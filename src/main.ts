@@ -3,6 +3,7 @@ import router from './router/index.ts'
 import './style.css'
 import App from './App.vue'
 import { createClient } from 'microcms-js-sdk';
+import "preline/preline";
 
 export const client = createClient({
     serviceDomain: 'shahu-portal',
