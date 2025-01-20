@@ -103,7 +103,7 @@
             <h4 class="font-medium text-lg text-gray-800 dark:text-gray-200">たすかる支援</h4>
             <span class="mt-5 font-bold text-5xl text-gray-800 dark:text-gray-200">
                 <span class="font-bold text-2xl -me-2">￥</span>
-                3,000 -
+                1,500 -
             </span>
             <p class="mt-2 text-sm text-gray-500">それなりに潤ったお財布事情があり、それなりに支援したい方</p>
 
